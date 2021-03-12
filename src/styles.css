@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mat-slider.mat-slider-horizontal .mat-slider-wrapper {
+    top: 18px;
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-wrapper {
+    height: 6px;
+    border-radius: 10px
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-background,
+  .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    height: 100%;
+    background:#ddd3ee;
+  }
+  .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
+    background-color: #663399;
+  }
+  .mat-accent .mat-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-color: #663399;
+    border: solid 9px white;
+    bottom: -20px;
+    right: -20px;
+  }
+  .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+    background-color: white;
+  }
+  
+  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #663399;
+  }
+  
+  
+  .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+    background-color: white;
+  }
+  
+  .mat-slide-toggle-thumb {
+      width: 15px !important;
+      height: 15px !important;
+      border:1px solid 663399;
+      transform: translate(30%, 32%);
+  }
+  
+  .mat-slide-toggle-bar {
+    background-color: #000;
+    border-radius: 15px !important;
+    height: 18px !important;
+  }
+  
+  .mat-select-value{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .mat-input-element.mat-form-field-autofill-control {
+    font-size: 20px;
+    font-weight: 500;
+  }

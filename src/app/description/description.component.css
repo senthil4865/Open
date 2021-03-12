@@ -1,0 +1,43 @@
+.quick-cash-align {
+  width: 391px;
+  height: 234px;
+  box-shadow: 0px 0px 30px #2321321F;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  opacity: 1;
+  position:relative;
+}
+
+.quick-cash-align:hover{
+    background-color: #9F62C9;
+    color:white;
+    opacity: 0.4;
+}
+
+.desc-logo-align{
+    position: absolute;
+    margin-left: 34.02px;
+    margin-top:33.72px;
+    width: 89.75px;
+    height:89.75px;
+}
+
+.desc-head-text{
+    position: absolute;
+    width:323px;
+    height:19px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 120.52px;
+    margin-left: 34px;
+}
+
+.desc-sub-text{
+    position: absolute;
+    width: 308px;
+    height: 38px;
+    margin-top: 146.52px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 34px;
+}

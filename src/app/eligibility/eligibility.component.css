@@ -1,0 +1,87 @@
+.eligible-container {
+  width: 688px;
+  height: 675px;
+  position: relative;
+}
+
+.control-width {
+  width: 100%;
+}
+
+.eligibility-card {
+  position: absolute;
+  margin-top: 10px;
+  width: 55%;
+  height: 544px;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+mat-slider {
+  width: 100%;
+}
+
+.eligibility-text {
+  font-size: 25px;
+  text-align: center;
+}
+
+.income-style {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.heading-text-style {
+  font-size: 15px;
+}
+
+.loan-card-align {
+  width: 30%;
+  height: 57%;
+  position: absolute;
+  right: 14%;
+  top: 12%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #663399;
+}
+
+.money-btn {
+  color: #663399;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.money-btn:hover {
+  color: white;
+  background-color: #663399;
+}
+
+.loan-txt-color {
+  color: white;
+}
+
+.loan-container {
+  position: absolute;
+  top: 30%;
+  left: 27%;
+}
+
+.emi-container {
+  position: absolute;
+  top: 45%;
+  left: 23%;
+}
+
+.money-btn {
+  position: absolute;
+  top: 60%;
+  left: 26%;
+}
+
+
+.loan-header {
+  font-size: 16px;
+  font-weight: 100;
+}

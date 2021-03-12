@@ -1,0 +1,72 @@
+<div class="eligible-container">
+  <mat-card class="eligibility-card">
+    <div class="eligibility-text">Eligibility Calculator</div>
+    <br /><br /><br />
+
+    <div>
+      <div class="heading-text-style">Monthly Income</div>
+      <div class="income-style"><i style="font-weight: 200;font-size: 16px;" class="fas fa-rupee-sign"></i> {{value}}</div>
+      <mat-slider [min]="100000" [max]="300000" [step]="1" [(ngModel)]="value" ></mat-slider>
+      <div>
+        <div style="display: inline-block">
+          <i style="font-weight: 100;" class="fas fa-rupee-sign"></i>1,00,000
+        </div>
+        <div style="display: inline-block; float: right">
+          <i  style="font-weight: 100;"  class="fas fa-rupee-sign"></i>3,00,000
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div>
+      <div class="heading-text-style">Monthly Expense</div>
+      <div class="income-style"><i style="font-weight: 200;font-size: 16px;" class="fas fa-rupee-sign"></i> {{expense}}</div>
+      <mat-slider [min]="100000" [max]="300000" [step]="1" [(ngModel)]="expense" ></mat-slider>
+    </div>
+    <br /><br />
+
+    <div>
+      <div  class="heading-text-style" class="heading-text-style">Repayment Tenure</div>
+      <mat-form-field class="control-width" appearance="legacy">
+        <mat-select>
+          <mat-option *ngFor="let month of months" [value]="month.value">
+            {{ month.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br /><br />
+
+    <div>
+      <span class="heading-text-style">Do you have any existing loans?</span
+      ><span style="float: right"><mat-slide-toggle></mat-slide-toggle></span>
+    </div>
+    <br /><br />
+    <div>
+        <span class="heading-text-style">EMI of existing loan (optional)</span>
+      <mat-form-field class="control-width" appearance="legacy">
+        <input matInput value="&#8377; 15,000" />
+      </mat-form-field>
+    </div>
+  </mat-card>
+  <mat-card class="loan-card-align">
+    <div class="loan-container">
+      <div class="loan-txt-color loan-header">Loan Amount</div>
+      <div style="font-weight: 600; font-size: 20px" class="loan-txt-color">
+        <i style="color: white" class="fas fa-rupee-sign"></i>1,00,000
+      </div>
+    </div>
+
+    <div class="emi-container">
+      <div class="loan-txt-color loan-header">Your EMI Will be</div>
+      <div
+        style="text-align: center; font-weight: 600; font-size: 20px"
+        class="loan-txt-color"
+      >
+        <i style="color: white" class="fas fa-rupee-sign"></i>15,000
+      </div>
+    </div>
+
+    <div><button class="money-btn" mat-button>GET MONEY</button></div>
+  </mat-card>
+</div>

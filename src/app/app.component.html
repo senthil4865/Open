@@ -1,0 +1,98 @@
+<header>
+  <div class="container">
+      <nav class="nav">
+          <a href="index.html" class="open-logo"><img class="logo-small" src="../assets/logo.png" /></a>
+          <div class="float-right" >
+            <ul class="nav-list">
+              <li>
+                  <a href="#" class="nav-link">Products</a>
+              </li>
+              <li>
+                  <a href="#" class="nav-link">Solutions</a>
+              </li>
+              <li>
+                  <a href="#" class="nav-link">Pricing</a>
+              </li>
+              <li>
+                <button mat-button class="login-btn-align" >Login</button>
+              </li>
+              <li>
+                <button mat-button class="get-started-btn-align" >Get Started</button>
+              </li>
+          </ul>
+          
+          </div>
+      </nav>
+
+
+
+  </div>
+</header>
+
+<section class="top-section-align" >
+  <div style="position: relative;" >
+   <img class="blob-small-align" src="../assets/blob-small.png" />
+  </div>
+  <div style="position: relative;width: 850px;" >
+    <img class="circle-align" src="../assets/circle.png" />
+  </div>
+</section>
+
+  <!-- we make it simpler text start -->
+<div class="hero-text-align" >
+  <div>We make it Super</div>
+  <div>Simple</div>
+  <div class="line"></div>
+</div>
+
+  <!-- we make it simpler text End -->
+
+<!-- video img start -->
+<img class="collect-img-vedio" src="../assets/collect_img-video.png" alt="">
+<!-- video img End -->
+
+<!-- Accounting dots left start -->
+<img class="accounting-dot-left-align" src="../assets/accounting_dots.png" alt="">
+<!-- Accounting dots left End -->
+
+
+<div style="position:absolute;top:200px;left:57%;width:630px;" > <app-eligible></app-eligible> </div>
+
+<!-- Accounting dots right start -->
+<img class="accounting-dot-right-align" src="../assets/accounting_dots.png" alt="">
+<!-- Accounting dots right End -->
+
+
+<section class="demo-content">
+ 
+  <img class="wave-align" src="../assets/sol_wave_bg.png" alt="">
+
+  <app-description class="disbursement-align" src={{arr[0][0]}} descHead={{arr[0][1]}} 
+   descSub={{arr[0][2]}} ></app-description>
+
+   <app-description class="interest-align" src={{arr[1][0]}} descHead={{arr[1][1]}} 
+   descSub={{arr[1][2]}} ></app-description>
+
+   <app-description class="paperwork-align" src={{arr[2][0]}} descHead={{arr[2][1]}} 
+   descSub={{arr[2][2]}} ></app-description>
+
+   <app-description class="business-align" src={{arr[3][0]}} descHead={{arr[3][1]}} 
+   descSub={{arr[3][2]}} ></app-description>
+
+
+   <app-description class="loans-align" src={{arr[4][0]}} descHead={{arr[4][1]}} 
+   descSub={{arr[4][2]}} ></app-description>
+
+
+   <div class="business-text-align" >
+    <div>Boost your business</div>
+    <div>with Open</div>
+    <br>
+    <div class="line"></div>
+    <div class="loan-txt">Get your hands on a term loan that’s crafted for your business</div>
+    <br> 
+    <button class="open-account" mat-button>Get Open Account</button>
+  </div>
+    
+</section>
+<router-outlet></router-outlet>
